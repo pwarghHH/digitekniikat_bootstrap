@@ -1,4 +1,1 @@
-git rm images
-git commit -m "Poistetaan vahingossa luotu tiedosto"
-git push
 
