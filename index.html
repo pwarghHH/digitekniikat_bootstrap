@@ -4,51 +4,59 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matkailusivusto - Etusivu</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-<style>
-body {
-  font-family: 'Montserrat', sans-serif;
-}
 
-.hero {
-  background-image: url('newzealand.jpg'); 
-  background-size: cover;       
-  background-position: center; 
-  color: white;
-  text-align: center;
-  padding: 300px 20px;
-}
+  <style>
+    /* Perusfontti koko sivustolle */
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
 
-.btn-primary {
-  background-color: #206C49 !important;
-  border-color: #206C49 !important;
-}
+    /* Hero-osio taustakuvalla */
+    .hero {
+      background-image: url('newzealand.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 300px 20px;
+    }
 
-.btn-primary:hover {
-  background-color: #275937 !important;
-  border-color: #275937 !important;
-}
+    /* Painikkeiden värit ja hover/active-tila */
+    .btn-primary {
+      background-color: #206C49 !important;
+      border-color: #206C49 !important;
+    }
 
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary:focus-visible {
-  box-shadow: none !important;
-  outline: none !important;
-}
-  
-</style>
+    .btn-primary:hover {
+      background-color: #275937 !important;
+      border-color: #275937 !important;
+    }
+
+    /* Poistetaan sininen outline ja varjo klikatessa */
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary:focus-visible {
+      box-shadow: none !important;
+      outline: none !important;
+    }
+  </style>
 </head>
+
 <body>
   <!-- Navigaatio -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Matkailu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link active" href="index.html">Etusivu</a></li>
@@ -71,45 +79,52 @@ body {
   <!-- Lyhyt esittely -->
   <div class="container my-5">
     <h2>Omat matkani</h2>
-    <p>Tällä sivustolla esittelen matkakohteita jossa olen käynyt.</p>
+    <p>Tällä sivustolla esittelen matkakohteita, joissa olen käynyt.</p>
   </div>
 
   <!-- Teaser-osio korteista -->
-<div class="container my-5">
-  <h2>Parhaat kohteet</h2>
-  <div class="row row-cols-1 row-cols-md-3 g-4">
-    <div class="col">
-      <div class="card">
-        <img src="sanfrancisco.jpg" class="card-img-top" alt="San Francisco">
-        <div class="card-body">
-          <h5 class="card-title">San Francisco</h5>
-          <p class="card-text">Koe San Francisco ja sen kuuluisat nähtävyydet.</p>
-          <a href="cards.html" class="btn btn-primary">Lue lisää</a>
+  <div class="container my-5">
+    <h2>Parhaat kohteet</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Kortti 1 -->
+      <div class="col">
+        <div class="card">
+          <img src="sanfrancisco.jpg" class="card-img-top" alt="San Francisco">
+          <div class="card-body">
+            <h5 class="card-title">San Francisco</h5>
+            <p class="card-text">Koe San Francisco ja sen kuuluisat nähtävyydet.</p>
+            <a href="cards.html" class="btn btn-primary">Lue lisää</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="auckland.jpg" class="card-img-top" alt="Auckland">
-        <div class="card-body">
-          <h5 class="card-title">Auckland</h5>
-          <p class="card-text">Koe Auckland ja sen kuuluisat nähtävyydet.</p>
-          <a href="cards.html" class="btn btn-primary">Lue lisää</a>
+
+      <!-- Kortti 2 -->
+      <div class="col">
+        <div class="card">
+          <img src="auckland.jpg" class="card-img-top" alt="Auckland">
+          <div class="card-body">
+            <h5 class="card-title">Auckland</h5>
+            <p class="card-text">Koe Auckland ja sen kuuluisat nähtävyydet.</p>
+            <a href="cards.html" class="btn btn-primary">Lue lisää</a>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col">
-      <div class="card">
-        <img src="barcelona.jpg" class="card-img-top" alt="Pariisi">
-        <div class="card-body">
-          <h5 class="card-title">Barcelona</h5>
-          <p class="card-text">Koe Barcelona ja sen kuuluisat nähtävyydet.</p>
-          <a href="cards.html" class="btn btn-primary">Lue lisää</a>
+
+      <!-- Kortti 3 -->
+      <div class="col">
+        <div class="card">
+          <img src="barcelona.jpg" class="card-img-top" alt="Barcelona">
+          <div class="card-body">
+            <h5 class="card-title">Barcelona</h5>
+            <p class="card-text">Koe Barcelona ja sen kuuluisat nähtävyydet.</p>
+            <a href="cards.html" class="btn btn-primary">Lue lisää</a>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
-</div>
 
   <!-- Footer -->
   <footer class="bg-dark text-white text-center py-3 mt-5">
@@ -120,6 +135,8 @@ body {
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
+
 
 
 
