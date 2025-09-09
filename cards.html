@@ -45,11 +45,21 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <div class="col">
         <div class="card h-100">
-          <img src="paris.jpg" class="card-img-top" alt="Pariisi, Ranska">
+          <img src="sanfrancisco.jpg" class="card-img-top" alt="Pariisi, Ranska">
           <div class="card-body">
-            <h5 class="card-title">Pariisi</h5>
-            <p class="card-text">Tutustu Pariisin nähtävyyksiin.</p>
+            <h5 class="card-title">San Francisco</h5>
+            <p class="card-text">Tutustu San Franciscon nähtävyyksiin.</p>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lisätietoja</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="auckland.jpg" class="card-img-top" alt="New York, USA">
+          <div class="card-body">
+            <h5 class="card-title">Auckland</h5>
+            <p class="card-text">Tutustu Aucklandin nähtävyyksiin.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lisätietoja</button>
           </div>
         </div>
       </div>
@@ -63,16 +73,6 @@
           </div>
         </div>
       </div>
-      <div class="col">
-        <div class="card h-100">
-          <img src="london.jpg" class="card-img-top" alt="New York, USA">
-          <div class="card-body">
-            <h5 class="card-title">Lontoo</h5>
-            <p class="card-text">Tutustu Lontoon nähtävyyksiin.</p>
-            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lisätietoja</button>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 
@@ -81,28 +81,11 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal1Label">Pariisi</h5>
+          <h5 class="modal-title" id="modal1Label">San Francisco</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
         </div>
         <div class="modal-body">
-          Pariisi tunnetaan Eiffel-tornista, Louvre-museosta ja romanttisista kujistaan.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal2Label">Tokio</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
-        </div>
-        <div class="modal-body">
-          Barcelonan ehdottomia nähtävyyksiä ovat modernistiarkkitehti Antoni Gaudín taianomaiset rakennukset, kuten maailman kuuluisin kirkko Sagrada Familia.
+          San Francisco on kiinnostava kaupunkilomakohde, joka tunnetaan rennosta tunnelmasta, mäkisistä maisemista, kuuluisista nähtävyyksistä ja herkullisesta ruoasta.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
@@ -115,11 +98,28 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modal3Label">New York</h5>
+          <h5 class="modal-title" id="modal3Label">Auckland</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
         </div>
         <div class="modal-body">
-          Jotkut Iso-Britannian suurimmista nähtävyyksistä, kuten Tower of London, Tower Bridge ja St Paul's Cathedral, sijaitsevat Lontoossa.
+          Auckland on merellinen ja vehreä kaupunki. Shoppailumahdollisuuksia sekä hyviä ravintoloita ja kahviloita löytyy runsaasti.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Barcelona</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+        </div>
+        <div class="modal-body">
+          Barcelonan ehdottomia nähtävyyksiä ovat modernistiarkkitehti Antoni Gaudín taianomaiset rakennukset, kuten maailman kuuluisin kirkko Sagrada Familia.
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
