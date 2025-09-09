@@ -4,46 +4,55 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matkailusivusto - Kortit</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
   <style>
+    /* Perusfontti koko sivustolle */
     body {
       font-family: 'Montserrat', sans-serif;
     }
+
+    /* Korttien kuvat */
     .card-img-top {
       height: 200px;
       object-fit: cover;
     }
 
-.btn-primary {
-  background-color: #206C49 !important;
-  border-color: #206C49 !important;
-}
+    /* Bootstrap-painikkeiden värit */
+    .btn-primary {
+      background-color: #206C49 !important;
+      border-color: #206C49 !important;
+    }
 
-.btn-primary:hover {
-  background-color: #275937 !important;
-  border-color: #275937 !important;
-}
+    .btn-primary:hover {
+      background-color: #275937 !important;
+      border-color: #275937 !important;
+    }
 
-.btn-primary:focus,
-.btn-primary:active,
-.btn-primary:focus-visible {
-  box-shadow: none !important;
-  outline: none !important;
-}
-    
+    /* Poistetaan sininen fokuskehys klikatessa */
+    .btn-primary:focus,
+    .btn-primary:active,
+    .btn-primary:focus-visible {
+      box-shadow: none !important;
+      outline: none !important;
+    }
   </style>
 </head>
+
 <body>
   <!-- Navigaatio -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Matkailu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
@@ -57,13 +66,16 @@
     </div>
   </nav>
 
-  <!-- Kortit -->
+  <!-- Kortit-osio -->
   <div class="container my-5">
     <h2 class="mb-4">Matkakohteiden esittelykortit</h2>
+
     <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Kortti 1 -->
       <div class="col">
         <div class="card h-100">
-          <img src="sanfrancisco.jpg" class="card-img-top" alt="Pariisi, Ranska">
+          <img src="sanfrancisco.jpg" class="card-img-top" alt="San Francisco, USA">
           <div class="card-body">
             <h5 class="card-title">San Francisco</h5>
             <p class="card-text">Tutustu San Franciscon nähtävyyksiin.</p>
@@ -71,9 +83,11 @@
           </div>
         </div>
       </div>
+
+      <!-- Kortti 2 -->
       <div class="col">
         <div class="card h-100">
-          <img src="auckland.jpg" class="card-img-top" alt="New York, USA">
+          <img src="auckland.jpg" class="card-img-top" alt="Auckland, Uusi-Seelanti">
           <div class="card-body">
             <h5 class="card-title">Auckland</h5>
             <p class="card-text">Tutustu Aucklandin nähtävyyksiin.</p>
@@ -81,9 +95,11 @@
           </div>
         </div>
       </div>
+
+      <!-- Kortti 3 -->
       <div class="col">
         <div class="card h-100">
-          <img src="barcelona.jpg" class="card-img-top" alt="Tokio, Japani">
+          <img src="barcelona.jpg" class="card-img-top" alt="Barcelona, Espanja">
           <div class="card-body">
             <h5 class="card-title">Barcelona</h5>
             <p class="card-text">Tutustu Barcelonan nähtävyyksiin.</p>
@@ -91,57 +107,73 @@
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
-  <!-- Modals (Lisätietoja) -->
+  <!-- Modals: Lisätietoja-kortit -->
+  <!-- Modal 1: San Francisco -->
   <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
+
         <div class="modal-header">
           <h5 class="modal-title" id="modal1Label">San Francisco</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
         </div>
+
         <div class="modal-body">
           San Francisco on kiinnostava kaupunkilomakohde, joka tunnetaan rennosta tunnelmasta, mäkisistä maisemista, kuuluisista nähtävyyksistä ja herkullisesta ruoasta.
         </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
         </div>
+
       </div>
     </div>
   </div>
 
-  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+  <!-- Modal 2: Barcelona -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal3Label">Auckland</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
-        </div>
-        <div class="modal-body">
-          Auckland on merellinen ja vehreä kaupunki. Shoppailumahdollisuuksia sekä hyviä ravintoloita ja kahviloita löytyy runsaasti.
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="modal2Label">Barcelona</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
         </div>
+
         <div class="modal-body">
           Barcelonan ehdottomia nähtävyyksiä ovat modernistiarkkitehti Antoni Gaudín taianomaiset rakennukset, kuten maailman kuuluisin kirkko Sagrada Familia.
         </div>
+
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
         </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 3: Auckland -->
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Auckland</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+        </div>
+
+        <div class="modal-body">
+          Auckland on merellinen ja vehreä kaupunki. Shoppailumahdollisuuksia sekä hyviä ravintoloita ja kahviloita löytyy runsaasti.
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+        </div>
+
       </div>
     </div>
   </div>
@@ -155,3 +187,4 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
