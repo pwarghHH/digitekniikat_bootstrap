@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Matkailusivusto - Kortit</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigaatio -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Matkailu</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+          <li class="nav-item"><a class="nav-link" href="carousel.html">Kuvakaruselli</a></li>
+          <li class="nav-item"><a class="nav-link" href="grid.html">Ruudukko</a></li>
+          <li class="nav-item"><a class="nav-link active" href="cards.html">Kortit</a></li>
+          <li class="nav-item"><a class="nav-link" href="accordion.html">Haitari</a></li>
+          <li class="nav-item"><a class="nav-link" href="table.html">Taulukko</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Kortit -->
+  <div class="container my-5">
+    <h2 class="mb-4">Matkakohteiden esittelykortit</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://picsum.photos/300/200?random=41" class="card-img-top" alt="Pariisi, Ranska">
+          <div class="card-body">
+            <h5 class="card-title">Pariisi</h5>
+            <p class="card-text">Tutustu valon kaupungin nähtävyyksiin.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">Lisätietoja</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://picsum.photos/300/200?random=42" class="card-img-top" alt="Tokio, Japani">
+          <div class="card-body">
+            <h5 class="card-title">Tokio</h5>
+            <p class="card-text">Futuristinen ja perinteinen Japani yhdellä matkalla.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">Lisätietoja</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://picsum.photos/300/200?random=43" class="card-img-top" alt="New York, USA">
+          <div class="card-body">
+            <h5 class="card-title">New York</h5>
+            <p class="card-text">Koe Big Applen kuuluisat nähtävyydet ja kulttuuri.</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">Lisätietoja</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modals (Lisätietoja) -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Pariisi</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+        </div>
+        <div class="modal-body">
+          Pariisi tunnetaan Eiffel-tornista, Louvre-museosta ja romanttisista kujistaan.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Tokio</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+        </div>
+        <div class="modal-body">
+          Tokio tarjoaa yhdistelmän moderneja pilvenpiirtäjiä ja perinteisiä temppeleitä.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">New York</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Sulje"></button>
+        </div>
+        <div class="modal-body">
+          New York on tunnettu Times Squaresta, Central Parkista ja monipuolisesta kulttuuristaan.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 Oma Nimesi | Matkailusivusto
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
