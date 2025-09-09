@@ -4,34 +4,44 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Matkailusivusto - Kuvakaruselli</title>
+
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
   <style>
+    /* Perusfontti koko sivustolle */
     body {
       font-family: 'Montserrat', sans-serif;
     }
+
+    /* Karusellin tekstin tausta ja tyylit */
     .carousel-caption {
       background-color: rgba(0,0,0,0.4);
       padding: 10px;
       border-radius: 5px;
     }
+
+    /* Karusellin kuvien maksimikorkeus ja skaalaus */
     .carousel-item img {
-      max-height: 700px;  
-      object-fit: cover;  
-      width: 90%;        
+      max-height: 700px;
+      object-fit: cover;
+      width: 90%;
     }
   </style>
 </head>
+
 <body>
   <!-- Navigaatio -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">Matkailu</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Vaihda navigaatio">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
@@ -47,12 +57,19 @@
 
   <!-- Kuvakaruselli -->
   <div id="travelCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+
+    <!-- Indikaattorit -->
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Kuva 1"></button>
+      <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Kuva 1"></button>
       <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="1" aria-label="Kuva 2"></button>
       <button type="button" data-bs-target="#travelCarousel" data-bs-slide-to="2" aria-label="Kuva 3"></button>
     </div>
+
+    <!-- Karusellin kuvat -->
     <div class="carousel-inner">
+
+      <!-- Karuselli item 1 -->
       <div class="carousel-item active">
         <img src="sanfrancisco.jpg" class="d-block w-100" alt="San Francisco, USA">
         <div class="carousel-caption d-none d-md-block">
@@ -60,6 +77,8 @@
           <p>Koe San Francisco ja sen kuuluisat nähtävyydet.</p>
         </div>
       </div>
+
+      <!-- Karuselli item 2 -->
       <div class="carousel-item">
         <img src="auckland.jpg" class="d-block w-100" alt="Auckland, Uusi-Seelanti">
         <div class="carousel-caption d-none d-md-block">
@@ -67,6 +86,8 @@
           <p>Koe Auckland ja sen kuuluisat nähtävyydet.</p>
         </div>
       </div>
+
+      <!-- Karuselli item 3 -->
       <div class="carousel-item">
         <img src="paris.jpg" class="d-block w-100" alt="Pariisi, Ranska">
         <div class="carousel-caption d-none d-md-block">
@@ -74,7 +95,10 @@
           <p>Koe Pariisi ja sen kuuluisat nähtävyydet.</p>
         </div>
       </div>
+
     </div>
+
+    <!-- Navigointipainikkeet -->
     <button class="carousel-control-prev" type="button" data-bs-target="#travelCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Edellinen</span>
@@ -83,6 +107,7 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Seuraava</span>
     </button>
+
   </div>
 
   <!-- Footer -->
